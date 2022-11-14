@@ -33,7 +33,7 @@ const Signup = () => {
     }
 
     try {
-      const { data } = await api.post("https://grpchatapp.herokuapp.com/api/v1/auth/register", {
+      const { data } = await api.post("/api/v1/auth/register", {
         username,
         email,
         password,
